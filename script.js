@@ -6,7 +6,7 @@ const arrayElementInput = document.getElementById('arrayElement');
 const addElementBtn = document.getElementById('addElement');
 
 generateArrayBtn.addEventListener('click', generateArray);
-startSortingBtn.addEventListener('click', startSorting);
+startSortingBtn.addEventListener('click', bubbleSort);
 addElementBtn.addEventListener('click', addElement);
 
 let array = [];
@@ -77,8 +77,5 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-function startSorting() {
-    bubbleSort();
-}
 
 generateArray();
