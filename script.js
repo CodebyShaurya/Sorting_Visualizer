@@ -76,6 +76,3 @@ async function swap(i, j) {
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
-
-
-generateArray();
